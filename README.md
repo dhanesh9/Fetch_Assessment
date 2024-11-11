@@ -16,7 +16,7 @@ To install the dependencies, use the following command:
 ```bash
 pip install -r requirements.txt
 
-# Running the Project
+## Requirements
 
 ### Using Python Environment
 
