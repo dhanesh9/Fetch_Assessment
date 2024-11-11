@@ -15,6 +15,7 @@ To install the dependencies, use the following command:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Requirements
 
@@ -25,7 +26,7 @@ pip install -r requirements.txt
    ```bash
    source env/bin/activate  # For Linux/Mac
    .\env\Scripts\activate   # For Windows
-
+   ```
 ### Using Docker
 
 You can also run the project in a Docker container. The Docker image includes the necessary environment setup for the code.
@@ -36,16 +37,26 @@ You can also run the project in a Docker container. The Docker image includes th
 
    ```bash
    docker build -t fetch_assessment .
+   ```
 
 2. **Run the Docker Container**: 
 
     ```bash
     docker run -p 8888:8888 fetch_assessment
+    ```
 
     Access Jupyter Notebook: Open http://localhost:8888 in your browser, using the token provided in the terminal output.
 
 ### Running the Docker Container with Custom Port Mapping
 By default, the application runs on port 8888 inside the container. You can map this to any port on your local machine. For example:
 docker run -p <host_port>:8888 fetch_assessment
+
+docker run -p <host_port>:8888 fetch_assessment
+
+Examples:
+- Run on the default port (8888):
+               docker run -p 8888:8888 fetch_assessment
+- Run on a custom port (e.g., 8080):
+              docker run -p 8080:8888 fetch_assessment
 
 
