@@ -55,8 +55,12 @@ docker run -p <host_port>:8888 fetch_assessment
 
 Examples:
 - Run on the default port (8888):
+  ```bash
                docker run -p 8888:8888 fetch_assessment
+  ```
 - Run on a custom port (e.g., 8080):
+  ```bash
               docker run -p 8080:8888 fetch_assessment
+  ```
 
 
